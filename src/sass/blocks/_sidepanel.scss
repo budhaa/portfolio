@@ -8,6 +8,13 @@
     align-items: start;
     height: 340px;
     z-index: 3;
+    &__link {
+        &:hover {
+            transform: rotate(90deg);
+            transition: all 0.4s ease;
+        }  
+    }
+
     &__divider {
         width: 2px;
         height: 70px;
