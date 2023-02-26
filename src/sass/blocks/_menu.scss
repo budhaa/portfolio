@@ -7,6 +7,9 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-end;
+	&:hover {
+		align-items: flex-start;
+	}
 	cursor: pointer;
 	span {
 		display: block;
