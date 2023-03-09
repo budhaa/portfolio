@@ -29,38 +29,29 @@
         row-gap: 30px;
         &-item {
             display: grid;
-            grid-template-columns: 43% 43% 14%;
-            grid-template-rows: 21px 1fr;
-            grid-template-areas: 
-            "title title percent"
-            "scal scal scal"
+            grid-template: 21px 14px / 200px 35px;
+            justify-content: space-between;
+            align-content: space-between;
         }
         
     }
     &__percent {
         font-size: 14px;
         line-height: 21px;
-        text-align: end;
-        grid-area: percent;
     }
     &__title {
         position: relative;
         padding-left: 14px;
-        grid-area: title;
         @include before_circle;
         &::before {
             top: -8.5px;
-        }
-
-        
+        }  
     }
     &__scale {
-        margin-top: 27px;
         width: 350px;
         height: 14px;
         background: #E8E4DE;
         border-radius: 4px;
-        grid-area: scal;
         &-reservoir {
             height: 14px;
             border-radius: 4px;
