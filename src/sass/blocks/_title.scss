@@ -23,3 +23,20 @@
 		line-height: 60px;
 	}
 }
+.upper {
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &::before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
