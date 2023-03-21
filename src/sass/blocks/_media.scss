@@ -26,6 +26,13 @@
             }
         }
     }
+
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 364px);
+            column-gap: 100px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -69,13 +76,33 @@
             row-gap: 30px;
         }
         &__skills {
-            grid-template: repeat(3 ,minmax(90px,auto)) / 380px;
+            grid-template: repeat(3 ,minmax(90px, auto)) / 380px;
             grid-auto-rows: minmax(90px, auto);
             &-item {
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
             }
 
+        }
+    }
+
+    .upper {
+        &__title {
+            margin-bottom: 15px;
+            &::before {
+                top: -6px;
+            }
+        }    
+    }
+    .resume {
+        padding-top: 80px;
+        &__wrapper {
+            padding: 50px 10px 80px 10px;
+            grid-template-columns: repeat(2, 320px);
+            column-gap: 60px;
+        }
+        &__item {
+            min-height: 204px;
         }
     }
 }
@@ -91,6 +118,7 @@
         }
     }
     .promo {
+        padding-top: 100px;
         &__title {
             width: 350px;
             
@@ -112,6 +140,19 @@
         &__photo {
             grid-row: unset;
         }
+    }
+
+    .resume {
+        padding-top: 60px;
+        &__wrapper {
+            padding: 50px 10px 50px 10px;
+            grid-template:  repeat(2, 1fr) / 520px;
+            row-gap: 40px;
+        }
+        &__item {
+            min-height: 100%;
+        }
+            
     }
 }
 
@@ -165,4 +206,32 @@
         }
         
     }
+    .resume {
+        &__wrapper {
+            padding: 50px 0px 40px 7px;
+            grid-template: repeat(2,1fr)/ 290px;
+            ul {
+                margin-bottom: 0;
+            }
+        }
+        &__column {
+            &-title {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        &__item {
+            &-head {
+                padding: 10px 0 0 100px;
+            }
+            &-icon {
+                top: 29px;
+            }
+            &::before {
+                top: 32px;
+            }
+        }
+            
+    }
 }
+    
