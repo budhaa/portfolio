@@ -33,6 +33,18 @@
             column-gap: 100px;
         }
     }
+    
+    .skills {
+        &__items {
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
+        }
+        &__progress {
+            margin-top: 100px;
+            grid-template-columns: repeat(auto-fit, 350px);
+            justify-content: space-between;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -76,7 +88,7 @@
             row-gap: 30px;
         }
         &__skills {
-            grid-template: repeat(3 ,minmax(90px, auto)) / 380px;
+            grid-template: repeat(3, minmax(90px, auto)) / 380px;
             grid-auto-rows: minmax(90px, auto);
             &-item {
                 grid-template-columns: 40px 320px;
@@ -103,6 +115,22 @@
         }
         &__item {
             min-height: 204px;
+        }
+    }
+
+    .skills {
+        &__items {
+            margin-top: 50px;
+            justify-content: space-around;
+            
+        }
+        &__progress {
+            margin-top: 90px;
+            grid-template-columns: repeat(auto-fit, 300px);
+            justify-content: space-around;
+        }
+        &__scale {
+            width: 300px;
         }
     }
 }
@@ -151,8 +179,22 @@
         }
         &__item {
             min-height: 100%;
+        }     
+    }
+
+    .skills {
+        &__items {
+            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, 263px);
+            justify-content: space-between;
         }
-            
+        &__progress {
+            margin-top: 60px;
+            grid-template-columns: repeat(auto-fit, 246px);
+        }
+        &__scale {
+            width: 246px;
+        }
     }
 }
 
@@ -174,6 +216,13 @@
             font-size: 16px;
             line-height: 24px;
         }
+    }
+
+    .upper {
+        &__subtitle {
+            margin-bottom: 15px;
+        }
+        
     }
     .promo {
         &__title {
@@ -209,7 +258,7 @@
     .resume {
         &__wrapper {
             padding: 50px 0px 40px 7px;
-            grid-template: repeat(2,1fr)/ 290px;
+            grid-template: repeat(2,1fr) / minmax(290px, auto);
             ul {
                 margin-bottom: 0;
             }
@@ -230,8 +279,28 @@
             &::before {
                 top: 32px;
             }
+        }     
+    }
+
+    .skills {
+        &__items {
+            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: center;
+            gap: 20px;
+   
         }
-            
+        &__progress {
+            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, 300px);
+            gap: 40px;
+        }
+        &__scale {
+            width: 300px;
+        }
+    }
+    .line {
+        margin: 0 auto;
     }
 }
     
